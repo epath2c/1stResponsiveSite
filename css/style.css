@@ -75,6 +75,21 @@ image {
 .showcase p {
   margin: 20px 0;
 }
+.showcase .grid {
+  grid-template-columns: 1.3fr 1fr;
+  gap: 30px;
+  overflow: visible;
+}
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  /* This will make a scroll bar. That need to be fiexed in the showcase gird, we add a overflow: visible there */
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: end;
+}
 
 /* ! Utilities */
 /* Utilities is the class we use all around the website */
@@ -86,10 +101,32 @@ image {
   padding: 0 40px;
 }
 
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   /* *This 100% will make whatever height the container is */
+}
+
+.grid {
+  display: grid;
+  /* //grid-template-columns: 2fr 1fr; */
+  /* Our grid system need the second line of code to be told to display things in colums. */
+  /* And the direct child will be displayed as grids. In our case, we have one for text, one for form */
+  /* If we have four direct children, the space will be 2 1 2 1 */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* This gap will make the whole grid system divide into two parts after the gap is decremented. */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
