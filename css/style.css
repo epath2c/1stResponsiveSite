@@ -105,6 +105,26 @@ image {
 .showcase-form input:focus {
   outline: none;
 }
+
+/* ?pseudo-classes selector: before and after */
+/* *when we use before or after or both, we need to use 'content' property */
+.showcase::before,
+.showcase::after {
+  content: "";
+  /* Leave this empty */
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  /* *These can make sure this skew works fine on all the browsers. */
+}
+
 /* ! Utilities */
 /* Utilities is the class we use all around the website */
 .container {
