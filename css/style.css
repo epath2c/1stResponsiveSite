@@ -91,6 +91,20 @@ image {
   justify-self: end;
 }
 
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+.showcase-form input:focus {
+  outline: none;
+}
 /* ! Utilities */
 /* Utilities is the class we use all around the website */
 .container {
@@ -108,6 +122,25 @@ image {
   box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
   padding: 20px;
   margin: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+.btn:hover {
+  transform: scale(0.98);
 }
 .flex {
   display: flex;
