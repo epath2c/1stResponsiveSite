@@ -164,3 +164,26 @@ img {
 .cloud .grid {
   grid-template-columns: 4fr, 3fr;
 }
+
+/* ! Languages */
+.languages .flex {
+  flex-wrap: wrap;
+  /* * This 'wrap' will make the seven logo go different line on a smaller screen. */
+}
+.languages .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+  /* * transition animation wrote here! */
+}
+
+.languages .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.languages .card:hover {
+  transform: translateY(-10px);
+  /* *negative means up, positive means moving down through Y axis */
+  /* * If we want to add animation to this transform we need to write above, not in the pseuclass 'hover' */
+}
