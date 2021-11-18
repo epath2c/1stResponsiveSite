@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  /* It allows us to use borders and padding and stuff without having to add to the width of one element  */
+  /* *It allows us to use borders and padding and stuff without having to add to the width of one element  */
   padding: 0;
   margin: 0;
 }
@@ -32,5 +32,42 @@ p {
 }
 image {
   width: 100%;
-  /* This 100% width make the image not too large for the browser. */
+  /* *This 100% width make the image not too large for the browser. */
+}
+
+.navbar {
+  background-color: #047aed;
+  color: #fff;
+  height: 70px;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+.navbar .flex {
+  justify-content: space-between;
+  /* *If the flex is in the nav bar,then it should be between. */
+  /* * other wise, for other items which need the class 'flex', they need space-center */
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  /* Get rid of the extra space */
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* *This 100% will make whatever height the container is */
 }
