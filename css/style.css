@@ -5,6 +5,9 @@
 :root {
   /* '--' is the syntax, the name followed. */
   --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
 }
 * {
   box-sizing: border-box;
@@ -125,7 +128,7 @@ img {
   /* *These can make sure this skew works fine on all the browsers. */
 }
 
-/* !Stats */
+/* ! Stats */
 .stats {
   padding-top: 100px;
 }
@@ -155,4 +158,9 @@ img {
   /* * This means the first child, in this case, the img, will start from 1 to 2 fr */
   /* * We made 3 columns and the img takes up 2 fr */
   /* * We made 2 rows and the img takes up 1 fr */
+}
+
+/* ! Cloud */
+.cloud .grid {
+  grid-template-columns: 4fr, 3fr;
 }
