@@ -36,7 +36,7 @@ h2 {
 p {
   margin: 10px 0;
 }
-image {
+img {
   width: 100%;
   /* *This 100% width make the image not too large for the browser. */
 }
@@ -141,4 +141,18 @@ image {
 .stats .grid p {
   font-size: 20px;
   font-weight: bold;
+}
+
+/* ! CLI */
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+/* anything that is the first child */
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  /* * This means the first child, in this case, the img, will start from 1 to 2 fr */
+  /* * We made 3 columns and the img takes up 2 fr */
+  /* * We made 2 rows and the img takes up 1 fr */
 }
