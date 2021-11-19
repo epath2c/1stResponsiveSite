@@ -253,6 +253,56 @@ pre {
   margin: 0 10px;
 }
 
+/* ! Animations */
+@keyframes slideInFromLeft {
+  /* * start: */
+  0% {
+    transform: translateX(-100%);
+    /* -100% means from far left of the screen. */
+  }
+  /* * end: */
+  100% {
+    transform: translateX(0%);
+    /* 0% means the normal position on the X axis */
+  }
+}
+@keyframes slideInFromRight {
+  /* * start: */
+  0% {
+    transform: translateX(100%);
+    /* 100% means from far right of the screen. */
+  }
+  /* * end: */
+  100% {
+    transform: translateX(0%);
+    /* 0% means the normal position on the X axis */
+  }
+}
+@keyframes slideInFromTop {
+  /* * start: */
+  0% {
+    transform: translateY(-100%);
+    /* -100% means from far up of the screen. */
+  }
+  /* * end: */
+  100% {
+    transform: translateX(0%);
+    /* * 0% means the normal position, and translateX! not Y ! */
+  }
+}
+@keyframes slideInFromBottom {
+  /* * start: */
+  0% {
+    transform: translateY(100%);
+    /* 100% means from far bottom of the screen. */
+  }
+  /* * end: */
+  100% {
+    transform: translateX(0%);
+    /* * 0% means the normal position, and translateX! not Y ! */
+  }
+}
+
 /* ! Responsive !!!! */
 /* * Basically we use @media to responsiviness. */
 
