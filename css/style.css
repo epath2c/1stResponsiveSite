@@ -188,6 +188,31 @@ img {
   /* * If we want to add animation to this transform we need to write above, not in the pseuclass 'hover' */
 }
 
+/* ! Features */
+.features-head img {
+  width: 200px;
+  justify-self: flex-end;
+  /* * This is a grid box, this flex-end will make the image to the left end. */
+}
+.features-subhead img {
+  width: 300px;
+  justify-self: flex-end;
+}
+.features-main .card > i {
+  margin-right: 20px;
+}
+.features-main .grid {
+  padding: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.features-main .grid > *:first-child {
+  grid-column: 1 / span 3;
+}
+.features-main .grid > *:nth-child(2) {
+  grid-column: 1 / span 2;
+}
+
 /* ! Footer */
 
 .footer .social a {
