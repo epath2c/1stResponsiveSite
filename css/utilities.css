@@ -70,6 +70,21 @@
   color: #fff;
 }
 
+/* ! Text colors */
+
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-dark {
+  color: var(--dark-color);
+}
+.text-light {
+  color: var(--light-color);
+}
+
 /* ! Text sizes */
 
 .lead {
