@@ -59,6 +59,17 @@
   color: #333;
 }
 
+/* ! Links color in the background and button background */
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
+
 /* ! Text sizes */
 
 .lead {

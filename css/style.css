@@ -187,3 +187,9 @@ img {
   /* *negative means up, positive means moving down through Y axis */
   /* * If we want to add animation to this transform we need to write above, not in the pseuclass 'hover' */
 }
+
+/* ! Footer */
+
+.footer .social a {
+  margin: 0 10px;
+}
