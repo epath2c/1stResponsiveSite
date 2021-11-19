@@ -193,3 +193,25 @@ img {
 .footer .social a {
   margin: 0 10px;
 }
+
+/* ! Responsive !!!! */
+/* * Basically we use @media to responsiviness. */
+
+/* ! Tablets and under */
+@media screen and (max-width: 768px) {
+}
+
+/* ! Mobile */
+@media screen and (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
