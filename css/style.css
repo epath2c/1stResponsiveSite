@@ -8,6 +8,8 @@
   --secondary-color: #1c3fa8;
   --dark-color: #002240;
   --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
 }
 * {
   box-sizing: border-box;
@@ -42,6 +44,13 @@ p {
 img {
   width: 100%;
   /* *This 100% width make the image not too large for the browser. */
+}
+
+code,
+pre {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
 }
 /* !Navbar */
 .navbar {
