@@ -202,7 +202,7 @@ img {
   /* //body {
     //display: none;
   //} */
-  /* * This can tell you when you are under 768px without using browser devtool */
+  /* * ↑This can tell you when you are under 768px without using browser devtool */
   .grid,
   .showcase .grid,
   .stats .grid,
@@ -242,4 +242,15 @@ img {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
   }
+  .showcase-form {
+    position: relative;
+    top: 30px;
+    height: 250px;
+    width: 300px;
+    padding: 30px;
+    z-index: 100;
+    justify-self: end;
+  }
+  /* ? On iPhone X the form is too big */
+  /* ? But I don't know how to make the size change of the box more smoothly. */
 }
